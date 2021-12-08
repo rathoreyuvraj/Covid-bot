@@ -1,7 +1,7 @@
 import requests
 import json
 import configparser as cfg
-from datetime import datetime
+
 
 class telegram_chatbot():
 
@@ -10,7 +10,7 @@ class telegram_chatbot():
         self.base = "https://api.telegram.org/bot{}/".format(self.token)
 
     def get_updates(self, offset=None):
-        url = self.base + "getUpdates?timeout=1"
+        url = self.base + "getUpdates?timeout=100"
         if offset:
             url = url + "&offset={}".format(offset + 1)
         r = requests.get(url)

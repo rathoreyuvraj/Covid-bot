@@ -1,14 +1,16 @@
-# Crypto Monitor Bot
-A Telegram Bot to keep track of cryptocurrency prices and
-provide alert if prices change rapidly.
-The Bot alerts if praces fall below set price or Rises above set price.
+# LocalCorona_Bot
+This Bot takes input of districts of Republic of India and returns the active, confirmed, recovered and deceased patients.  
+Additional function of adding subscribers is there which if chosen sends data to user daily at a specefic time.
+<img src="img1.jpeg" width=300> 
+<img src="img2.jpeg" width=300>
 
-Prices are fetched from WazirX ticker API  https://api.wazirx.com/api/v2/tickers.
-</br>
-<img src="img11.jpeg" width=300> 
-<img src="img22.jpeg" width=300>
-</br>
+Source of data https://api.covid19india.org/state_district_wise.json
 
-
-
-The cryptocurrency protfolio can also be acessed from here.
+Dependencies:   
+  requests  
+  nested_lookup 
+  urllib  
+  schedule  
+  bot framework(bot.py) by Saurabh Johar https://github.com/SouravJohar/gangsta 
+ Tutorial can be found here https://www.youtube.com/watch?v=5nhdxpoicW4&ab_channel=SouravJohar
+  
